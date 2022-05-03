@@ -23,15 +23,16 @@ export async function getStaticProps() {
   };
 }
 
-const Home: NextPage = ({ aboutHtml }) => {
-  return (
-    <>
-      <div>
-        <NavigationBar />
-      </div>
-      <div>{parse(aboutHtml)}</div>
-    </>
-  );
-};
+interface AboutPageProps {
+  aboutHtml: string;
+}
 
+const Home: NextPage = ({ aboutHtml }: AboutPageProps) => (
+  <>
+    <div>
+      <NavigationBar />
+    </div>
+    <div>{parse(aboutHtml)}</div>
+  </>
+);
 export default Home;
