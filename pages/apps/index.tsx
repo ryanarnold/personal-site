@@ -1,11 +1,13 @@
 import React from 'react';
 import apps from '../../content/apps';
+import NavigationBar from '../components/navbar/NavigationBar';
 
 interface Props {}
 
 function AppsPage({}: Props) {
   return (
     <div>
+      <NavigationBar />
       <p>These are some of the apps I&apos;ve made. Enjoy!</p>
       {apps.map((app) => (
         <div>
