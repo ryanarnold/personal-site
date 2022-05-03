@@ -1,12 +1,13 @@
 import React from 'react';
 import apps from '../../content/apps';
+import Layout from '../components/Layout';
 import NavigationBar from '../components/navbar/NavigationBar';
 
 interface Props {}
 
 function AppsPage({}: Props) {
   return (
-    <div>
+    <Layout>
       <NavigationBar />
       <p>These are some of the apps I&apos;ve made. Enjoy!</p>
       {apps.map((app) => (
@@ -22,7 +23,7 @@ function AppsPage({}: Props) {
           </p>
         </div>
       ))}
-    </div>
+    </Layout>
   );
 }
 

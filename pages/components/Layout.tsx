@@ -10,15 +10,25 @@ const Container = styled.div`
     padding: 10%;
   }
 
-  @media (max-width: 900px) and (min-width: 600px) {
+  @media (max-width: 900px) and (min-width: 601px) {
     grid-template-columns: 0.3fr 1fr 0.3fr;
+  }
+
+  @media (max-width: 1200px) and (min-width: 901px) {
+    grid-template-columns: 0.5fr 1fr 0.5fr;
   }
 `;
 
 interface Props {}
 
 const Layout = ({ children }: Props) => {
-  return <Container>{children}</Container>;
+  return (
+    <Container>
+      <div />
+      <div>{children}</div>
+      <div />
+    </Container>
+  );
 };
 
 export default Layout;

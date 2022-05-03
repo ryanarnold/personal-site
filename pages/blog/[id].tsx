@@ -6,6 +6,7 @@ import getMarkdownContents, {
   getMarkdownFileData,
 } from '../../content/markdown-utils';
 import { Blog } from '../../types/Blog';
+import Layout from '../components/Layout';
 import NavigationBar from '../components/navbar/NavigationBar';
 
 interface Props {
@@ -41,7 +42,7 @@ function BlogPostPage({ blog }: Props) {
   const markdownHtml = blog.markdownContent ? getHtmlFromMarkdown(blog.markdownContent) : '';
 
   return (
-    <>
+    <Layout>
       <div>
         <NavigationBar />
       </div>
@@ -50,7 +51,7 @@ function BlogPostPage({ blog }: Props) {
         <p>{blog.date}</p>
         {parse(markdownHtml)}
       </div>
-    </>
+    </Layout>
   );
 }
 

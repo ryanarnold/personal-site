@@ -6,6 +6,7 @@ import parse from 'html-react-parser';
 import NavigationBar from './components/navbar/NavigationBar';
 import getMarkdownContents from '../content/markdown-utils';
 import Layout from './components/Layout';
+import TextContent from './components/TextContent';
 
 export async function getStaticProps() {
   const aboutMarkdownPath = `${process.cwd()}/content/about.md`;
@@ -33,7 +34,7 @@ const Home: NextPage = ({ aboutHtml }: AboutPageProps) => (
     <div>
       <NavigationBar />
     </div>
-    <div>{parse(aboutHtml)}</div>
+    <TextContent>{parse(aboutHtml)}</TextContent>
   </Layout>
 );
 export default Home;
