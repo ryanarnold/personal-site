@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-interface Props {}
+interface Props {
+  children: any;
+}
 
 const StyledTextContent = styled.div`
   line-height: 1.5rem;

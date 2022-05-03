@@ -5,7 +5,7 @@ import NavigationBar from '../components/navbar/NavigationBar';
 
 interface Props {}
 
-function AppsPage({}: Props) {
+function AppsPage() {
   return (
     <Layout>
       <NavigationBar />

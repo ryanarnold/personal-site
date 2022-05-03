@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Link from 'next/link';
-import React from 'react';
+import React, { JSXElementConstructor } from 'react';
 import styled from 'styled-components';
 
 interface Props {
@@ -24,7 +24,7 @@ function NavigationLink({ text, href, openInNewTab }: Props) {
 
   if (openInNewTab) {
     linkJsx = (
-      <Link href={href} passHref>
+      <Link href={href ?? ''} passHref>
         <StyledLink target="_blank" rel="noopener noreferrer">
           {text}
         </StyledLink>
@@ -32,7 +32,7 @@ function NavigationLink({ text, href, openInNewTab }: Props) {
     );
   } else {
     linkJsx = (
-      <Link href={href} passHref>
+      <Link href={href ?? ''} passHref>
         <StyledLink rel="noopener noreferrer">{text}</StyledLink>
       </Link>
     );

@@ -17,7 +17,10 @@ export function getMarkdownFileData(filepath: string): Blog {
 }
 
 export default function getMarkdownContents(filepath: string): string {
-  return getMarkdownFileData(filepath).markdownContent;
+  if (getMarkdownFileData(filepath).markdownContent) {
+    return getMarkdownFileData(filepath).markdownContent as string;
+  }
+  return '';
 }
 
 export function getBlogsMetadata(blogsDir: string): Blog[] {

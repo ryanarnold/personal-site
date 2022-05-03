@@ -19,9 +19,11 @@ const Container = styled.div`
   }
 `;
 
-interface Props {}
+interface Props {
+  children: any;
+}
 
-const Layout = ({ children }: Props) => {
+function Layout({ children }: Props) {
   return (
     <Container>
       <div />
@@ -29,6 +31,6 @@ const Layout = ({ children }: Props) => {
       <div />
     </Container>
   );
-};
+}
 
 export default Layout;

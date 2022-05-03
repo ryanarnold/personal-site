@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
+import styled from 'styled-components';
 import { getBlogsMetadata } from '../../content/markdown-utils';
 import { Blog } from '../../types/Blog';
 import NavigationBar from '../components/navbar/NavigationBar';
 import Layout from '../components/Layout';
-import styled from 'styled-components';
 
 export async function getStaticProps() {
   const blogList = getBlogsMetadata(`${process.cwd()}/content/blog/`);

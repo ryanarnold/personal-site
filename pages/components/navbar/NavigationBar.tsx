@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import NavigationLink from './NavigationLink';
 
-interface Props {}
-
 const NavigationBarDiv = styled.div`
   text-align: center;
 `;
@@ -20,7 +18,7 @@ const Divider = styled.hr`
   border: 1px solid #cacaca;
 `;
 
-function NavigationBar({}: Props) {
+function NavigationBar() {
   return (
     <NavigationBarDiv>
       <NavigationHeader>zoleta.io</NavigationHeader>

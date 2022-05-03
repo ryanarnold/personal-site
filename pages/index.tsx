@@ -29,7 +29,7 @@ interface AboutPageProps {
   aboutHtml: string;
 }
 
-const Home: NextPage = ({ aboutHtml }: AboutPageProps) => (
+const Home = ({ aboutHtml }: AboutPageProps) => (
   <Layout>
     <div>
       <NavigationBar />
