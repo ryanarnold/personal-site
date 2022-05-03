@@ -5,7 +5,6 @@ import NavigationBar from '../components/navbar/NavigationBar';
 
 export async function getStaticProps() {
   const blogList = getBlogsMetadata(`${process.cwd()}/content/blog/`);
-  console.log(blogList);
   return { props: { blogList } };
 }
 

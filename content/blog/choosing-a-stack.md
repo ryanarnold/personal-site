@@ -1,5 +1,6 @@
 ---
 title: Choosing a Stack - A Guide
+slug: choosing-a-stack
 date: 2022-04-05
 ---
 
