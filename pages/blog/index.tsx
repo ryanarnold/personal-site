@@ -2,6 +2,7 @@ import React from 'react';
 import { getBlogsMetadata } from '../../content/markdown-utils';
 import { Blog } from '../../types/Blog';
 import NavigationBar from '../components/navbar/NavigationBar';
+import Link from 'next/link';
 
 export async function getStaticProps() {
   const blogList = getBlogsMetadata(`${process.cwd()}/content/blog/`);
@@ -21,7 +22,7 @@ const BlogPage = ({ blogList }: Props) => {
         {blogList.map((blog) => {
           return (
             <div>
-              <p>{blog.title}</p>
+              <Link href={`blog/${blog.slug}`}>{blog.title}</Link>
               <p>{blog.date}</p>
             </div>
           );
