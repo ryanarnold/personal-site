@@ -10,6 +10,7 @@ function NavigationBar({}: Props) {
       <NavigationLink text="About" href="/" />
       <NavigationLink text="Apps" href="/apps" />
       <NavigationLink text="Blog" href="/blog" />
+      <NavigationLink text="GitHub" href="https://github.com/ryanarnold" openInNewTab />
     </div>
   );
 }
