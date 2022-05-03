@@ -5,6 +5,7 @@ import showdown from 'showdown';
 import parse from 'html-react-parser';
 import NavigationBar from './components/navbar/NavigationBar';
 import getMarkdownContents from '../content/markdown-utils';
+import Layout from './components/Layout';
 
 export async function getStaticProps() {
   const aboutMarkdownPath = `${process.cwd()}/content/about.md`;
@@ -28,11 +29,11 @@ interface AboutPageProps {
 }
 
 const Home: NextPage = ({ aboutHtml }: AboutPageProps) => (
-  <>
+  <Layout>
     <div>
       <NavigationBar />
     </div>
     <div>{parse(aboutHtml)}</div>
-  </>
+  </Layout>
 );
 export default Home;
