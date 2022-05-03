@@ -4,7 +4,7 @@ import React from 'react';
 import showdown from 'showdown';
 import parse from 'html-react-parser';
 import NavigationBar from './components/navbar/NavigationBar';
-import getMarkdownContents from '../content/markdown';
+import getMarkdownContents from '../content/markdown-utils';
 
 export async function getStaticProps() {
   const aboutMarkdownPath = `${process.cwd()}/content/about.md`;

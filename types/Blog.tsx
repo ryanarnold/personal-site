@@ -1,5 +1,5 @@
 export interface Blog {
   title: string;
-  date: Date;
+  date: string;
   markdownContent: string;
 }
