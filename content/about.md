@@ -6,7 +6,7 @@ Professionally, I’m a software developer that specializes in enterprise softwa
 
 However, this site isn’t about my professional life. You can go to my LinkedIn for more on that.
 
-This site is about the things I do and make outside my work, particularly the various web and mobile apps which I have made during my spare timea
+This site is about the things I do and make outside my work, particularly the various web and mobile apps which I have made during my spare time.
 
 Regarding techology, I use React and React Native on the frontend and Python with the Flask web framework on the backend.
 
