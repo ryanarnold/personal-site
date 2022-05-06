@@ -1,14 +1,11 @@
 const apps = [
   {
-    title: 'Baybayin Quiz App',
+    title: 'Secondly Earnings',
     description:
-      'A web app for helping to learn the native alphabet of the Philippines - Baybayin.',
-    madewith: ['Svelte'],
-  },
-  {
-    title: 'Sulyap Balita',
-    description: 'View summarized daily news',
-    madewith: ['React', 'Next.js'],
+      "A small widget that motivates you to work by visualizing how much money you're making while working",
+    madewith: ['Next.js', 'React', 'Material UI'],
+    image: '/img/secondly-earnings.png',
+    link: 'https://secondly-earnings.vercel.app/',
   },
 ];
 
@@ -24,6 +21,10 @@ export const techLinks = [
   {
     tech: 'Next.js',
     link: 'https://nextjs.org/',
+  },
+  {
+    tech: 'Material UI',
+    link: 'https://mui.com/',
   },
 ];
 
