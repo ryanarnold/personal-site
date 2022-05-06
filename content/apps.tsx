@@ -12,4 +12,19 @@ const apps = [
   },
 ];
 
+export const techLinks = [
+  {
+    tech: 'React',
+    link: 'https://reactjs.org/',
+  },
+  {
+    tech: 'Svelte',
+    link: 'https://svelte.dev/',
+  },
+  {
+    tech: 'Next.js',
+    link: 'https://nextjs.org/',
+  },
+];
+
 export default apps;
