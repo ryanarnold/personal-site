@@ -1,7 +1,7 @@
 import React from 'react';
 import apps from '../../content/apps';
-import Layout from '../components/Layout';
-import NavigationBar from '../components/navbar/NavigationBar';
+import Layout from '../../components/Layout';
+import NavigationBar from '../../components/navbar/NavigationBar';
 
 interface Props {}
 

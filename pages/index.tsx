@@ -1,12 +1,11 @@
 /* eslint-disable react/function-component-definition */
-import type { NextPage } from 'next';
 import React from 'react';
 import showdown from 'showdown';
 import parse from 'html-react-parser';
-import NavigationBar from './components/navbar/NavigationBar';
+import NavigationBar from '../components/navbar/NavigationBar';
 import getMarkdownContents from '../content/markdown-utils';
-import Layout from './components/Layout';
-import TextContent from './components/TextContent';
+import Layout from '../components/Layout';
+import TextContent from '../components/TextContent';
 
 export async function getStaticProps() {
   const aboutMarkdownPath = `${process.cwd()}/content/about.md`;

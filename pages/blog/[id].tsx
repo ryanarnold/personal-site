@@ -6,8 +6,8 @@ import getMarkdownContents, {
   getMarkdownFileData,
 } from '../../content/markdown-utils';
 import { Blog } from '../../types/Blog';
-import Layout from '../components/Layout';
-import NavigationBar from '../components/navbar/NavigationBar';
+import Layout from '../../components/Layout';
+import NavigationBar from '../../components/navbar/NavigationBar';
 
 interface Props {
   blog: Blog;
