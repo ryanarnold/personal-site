@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import styled from 'styled-components';
+import { linkColor } from './styles';
 
 interface Props {
   href: string;
@@ -8,7 +9,7 @@ interface Props {
 }
 
 const StyledLink = styled.a`
-  color: red;
+  color: #${linkColor};
   &:hover {
     text-decoration: underline;
   }

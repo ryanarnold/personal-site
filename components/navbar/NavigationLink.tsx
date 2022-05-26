@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import React, { JSXElementConstructor } from 'react';
 import styled from 'styled-components';
+import { linkColor } from '../styles';
 
 interface Props {
   text: string;
@@ -10,7 +11,7 @@ interface Props {
 }
 
 const StyledLink = styled.a`
-  color: red;
+  color: #${linkColor};
   font-family: 'Barlow' serif;
   font-size: 1.1em;
 

@@ -4,10 +4,12 @@ body {
   margin: 0;
   font-family: 'Barlow', serif;
   font-size: 1.1rem;
+  background-color: #2b2d42;
+  color: white;
 }
 
 a {
-  color: red;
+  color: #8d99ae;
   text-decoration: none;
 }
 
