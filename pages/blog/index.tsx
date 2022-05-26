@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
+import { useRouter } from 'next/router';
 import { getBlogsMetadata } from '../../content/markdown-utils';
 import { Blog } from '../../types/Blog';
 import NavigationBar from '../../components/navbar/NavigationBar';
@@ -35,21 +36,28 @@ const BlogLink = styled.div`
 `;
 
 function BlogPage({ blogList }: Props) {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push('/');
+  });
+
   return (
-    <Layout>
-      <NavigationBar />
-      <div>
-        <p>A tiny slice of the inside of my brain, for your reading pleasure. Enjoy.</p>
-        {blogList.map((blog) => (
-          <BlogLink>
-            <div>
-              <Link href={`blog/${blog.slug}`}>{blog.title}</Link>
-            </div>
-            <p>{blog.date}</p>
-          </BlogLink>
-        ))}
-      </div>
-    </Layout>
+    // <Layout>
+    //   <NavigationBar />
+    //   <div>
+    //     <p>A tiny slice of the inside of my brain, for your reading pleasure. Enjoy.</p>
+    //     {blogList.map((blog) => (
+    //       <BlogLink>
+    //         <div>
+    //           <Link href={`blog/${blog.slug}`}>{blog.title}</Link>
+    //         </div>
+    //         <p>{blog.date}</p>
+    //       </BlogLink>
+    //     ))}
+    //   </div>
+    // </Layout>
+    <p>There&apos;s nothing here</p>
   );
 }
 
